@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="headings-container">
+                <h1>AI Image Generator</h1>
+                <h2 class="heading">Using JavaScript and Unsplash API</h2>
+                <h5 class="sub-heading">
+                    Enter text below and get the AI-generated image related to this text.
+                </h5>
+            </div>
+
+            <!-- Correcting the ID from div to form -->
+            <form id="generate-image-form" class="form-container my-form">
+                <input id="input-value" placeholder="Enter some text..." type="text" class="form-input form-controls">
+                <button type="submit" class="image-generate-btn form-controls">Generate Image</button>
+            </form>
+
+            <div id="images-visible" class="image-container">
+                <p id="imageContainerText"></p>
+                <img id="generated-image" class="my-generated-image" src="" alt="AI Generated Image">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

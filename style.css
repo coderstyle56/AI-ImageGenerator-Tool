@@ -1,0 +1,80 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.container {
+    padding: 20px;
+    border: 2px solid #ccc;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(232, 180, 7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.heading {
+    color: #318C46;
+}
+
+.headings-container {
+    text-align: center;
+    color: #f2f0f0;
+}
+
+.form-controls {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.image-generate-btn {
+    background-color: #318C46;
+    cursor: pointer;
+    color: #fff;
+}
+
+#imageContainerText {
+    color: #000;
+}
+
+.image-container {
+    margin: 50px 0;
+    display: none;
+    text-align: center;
+}
+
+.my-generated-image {
+    width: 100%;
+    height: 350px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 920px) {
+    .container {
+        width: 100%;
+    }
+
+    .my-generated-image {
+        width: 100%;
+        height: 300px;
+    }
+}
